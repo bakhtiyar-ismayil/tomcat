@@ -13,11 +13,11 @@ Tomcat is an open source Java implementation package developed by the Apache Sof
 PATH=$PATH:$JAVA_HOME/bin
 JAVA_HOME=/usr/share/java 
 
-![img](/apache/tomcat/img/tomcat1.png)
+![img](img/tomcat1.png)
 
 **~ source ~/.bashrc**
 
-![img](/apache/tomcat/img/tomcat2.png)
+![img](img/tomcat2.png)
  
 Running Tomcat as the root user is a security risk and not considered best practice. We’ll create a new system user for that and will specify tomcat username. You can specify what wolud you like. 
 
@@ -37,7 +37,7 @@ Create Directory  for all tomcat files  and preapre user for tomcat (TOMCAT_BASE
 
 **# sudo netstat -tulpan | grep LISTEN**
 
-![img](/apache/tomcat/img/tomcat3.png)
+![img](img/tomcat3.png)
 
 This method only for "single instance" , but we will create "multi instance". 
 
@@ -45,7 +45,7 @@ This method only for "single instance" , but we will create "multi instance".
  
 **# cp apache-tomcat-9.0.65/ instances/instance1 -pr** 
 
-![img](/apache/tomcat/img/tomcat4.png)
+![img](img/tomcat4.png)
 
 Now we can open **# cd /tomcat/instances/instance/bin** and run **#./startup.sh** or can create a script which will start our tomcat
 
@@ -73,13 +73,13 @@ $CATALINA_HOME/bin/startup.sh
 
 ./start.sh instance1
 
-![img](/apache/tomcat/img/tomcat5.png)
+![img](img/tomcat5.png)
 
 
-![img](/apache/tomcat/img/tomcat6.png)
+![img](img/tomcat6.png)
 
 
-![img](/apache/tomcat/img/tomcat7.png)
+![img](img/tomcat7.png)
 
 
 
